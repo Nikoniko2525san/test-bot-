@@ -1,3 +1,4 @@
+require('dotenv').config();
 // 必要なモジュールを読み込み
 const express = require("express");
 const bodyParser = require("body-parser");
