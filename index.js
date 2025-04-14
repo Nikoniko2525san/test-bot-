@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config(); // これを最初に追加
 // 必要なモジュールを読み込み
 const express = require("express");
 const bodyParser = require("body-parser");
