@@ -6,6 +6,16 @@ const line = require("@line/bot-sdk");
 const app = express();
 const port = process.env.PORT || 3000;
 
+// 環境変数のチェック
+if (!process.env.LINE_CHANNEL_ACCESS_TOKEN || !process.env.LINE_CHANNEL_SECRET) {
+  console.error("環境変数が設定されていません。");
+  process.exit(1);
+}
+
+// デバッグ用ログ
+console.log("LINE_CHANNEL_ACCESS_TOKEN:", process.env.LINE_CHANNEL_ACCESS_TOKEN ? "読み込み成功" : "未設定");
+console.log("LINE_CHANNEL_SECRET:", process.env.LINE_CHANNEL_SECRET ? "読み込み成功" : "未設定");
+
 // LINE Bot 設定
 const config = {
   channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN,
