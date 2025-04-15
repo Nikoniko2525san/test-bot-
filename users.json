@@ -1,1 +1,10 @@
-{}
+{
+  "user_id_1": {U6ef7f59ff2e7220b5e00cfc27ffb4b9f
+    "role": "管理者",
+    "coins": 20
+  },
+  "user_id_2": {U9a952e1e4e8580107b52b5f5fd4f0ab3
+    "role": "管理者",
+    "coins": 20
+  }
+}
